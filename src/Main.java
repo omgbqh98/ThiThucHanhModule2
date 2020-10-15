@@ -2,6 +2,7 @@ import display.DisPlay;
 import model.PhoneBook;
 import service.PhoneBookService;
 import service.ReadFile;
+import service.Write;
 
 import java.util.Scanner;
 
@@ -36,8 +37,10 @@ public class Main {
                     case 5:
 //                        ReadFile readFile = new ReadFile();
                         ReadFile.readFile();
+                        break;
                     case 6:
-
+                        Write.write();
+                        break;
                     case 8:
                         System.exit(0);
                     default:
